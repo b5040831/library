@@ -9,7 +9,10 @@ class Book {
 	Date dateBorrowed
 	Date returnDate
 	String student
-	Boolean isOverdue 
+	Boolean isOverdue
+	Library libraryName
+
+	static hasMany=[reviewID:BookReview] 
 
     static constraints = {
 	title nullable: false, blank: false
@@ -20,5 +23,6 @@ class Book {
 	returnDate nullable: false, blank: false
 	student nullable: false, blank: false
 	isOverdue nullable: false, blank: false
+	libraryName nullable: false, blank: false
     }
 }

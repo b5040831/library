@@ -2,9 +2,10 @@ package com.pginter
 
 class BookReview {
 
-	String book
-	Date dateCreated
-	String student
+	int reviewID
+	Book book
+	Date dateReviewMade
+	Student studentName
 	String review
 
     static constraints = {
