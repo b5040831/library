@@ -8,7 +8,7 @@ class Book {
 	String isbn
 	Date dateBorrowed
 	Date returnDate
-	String student
+	Student studentName
 	Boolean isOverdue
 	Library libraryName
 
