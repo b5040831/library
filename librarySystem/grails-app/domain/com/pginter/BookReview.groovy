@@ -3,15 +3,16 @@ package com.pginter
 class BookReview {
 
 	int reviewID
-	Book book
+	Book bookTitle
 	Date dateReviewMade
 	Student studentName
 	String review
 
     static constraints = {
-	book nullable: false, blank: false
-	dateCreated nullable: false, blank: false
-	student nullable: false, blank: false
+	reviewID nullable:false, blank: false
+	bookTitle nullable: false, blank: false
+	dateReviewMade nullable: false, blank: false
+	studentName nullable: false, blank: false
 	review nullable: false, blank: false, widget:'textarea'
     }
 }

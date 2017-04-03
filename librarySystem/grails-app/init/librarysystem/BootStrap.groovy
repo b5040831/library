@@ -36,34 +36,78 @@ class BootStrap {
 		course: course2
 	).save()
 
+	def library1 = new Library(
+		libraryName: 'library1name',
+		address: 'library1address',
+		openingHours: 'asdadasda',
+		location: 'China',
+		studySpaces: 50
+	).save()
+	def library2 = new Library(
+		libraryName: 'library2name',
+		address: 'library2address',
+		openingHours: 'asdsdadasda',
+		location: 'Budapest',
+		studySpaces: 666
+	).save()
+
+	def librarian1 = new Librarian(
+		librarianName: 'Arnold',
+		email: 'Terminator2@gmail.com',
+		office: 'somewhere',
+		username: 'Arnoldblack',
+		password: 'dupa',
+		telephone: '34646465464',
+		libraryName: library1
+	).save()
+	def librarian2 = new Librarian(
+		librarianName: 'Robert',
+		email: 'Lewy@gmail.com',
+		office: 'somewhere',
+		username: 'Bayernmunchen',
+		password: 'dupa',
+		telephone: '5453324',
+		libraryName: library2
+	).save()
+
+
 	def book1 = new Book (
-	title: 'book1title',
-	subject: 'book1subject',
-	author: 'book1author',
-	isbn: 'book1isbn',
-	dateBorrowed: newDate('20/03/2017'),
-	returnDate: newDate('20/03/2017'),
-	student: student1,
-	isOverdue: true,
-	library: library1
+		bookTitle: 'book1title',
+		subject: 'book1subject',
+		author: 'book1author',
+		isbn: 'book1isbn',
+		dateBorrowed: new Date('20/03/2017'),
+		returnDate: new Date('20/03/2017'),
+		studentName: student1,
+		isOverdue: true,
+		libraryName: library1
 	).save()
 	def book2 = new Book (
+		bookTitle: 'book2title',
+		subject: 'book2subject',
+		author: 'book2author',
+		isbn: 'book2isbn',
+		dateBorrowed: new Date('22/03/2017'),
+		returnDate: new Date('24/03/2017'),
+		studentName: student2,
+		isOverdue: false,
+		libraryName: library2
 
 	).save()
 
-	def bookReview1 = new BookReview (
-		reviewID: 2,
-		book: book1,
-		dateReviewMade: newDate('20/03/2017'),
-		student: student1,
+	def review1 = new BookReview (
+		reviewID: 1,
+		bookTitle: book1,
+		dateReviewMade: new Date('20/03/2017'),
+		studentName: student1,
 		review: 'abcdefasf'
 	
 	).save()
-	def bookReview2 = new BookReview (
-		reviewID: 6,
-		book: book2,
-		dateReviewMade: newDate('20/03/2017'),
-		student: student1,
+	def review2 = new BookReview (
+		reviewID: 2,
+		bookTitle: book2,
+		dateReviewMade: new Date('20/03/2017'),
+		studentName: student1,
 		review: 'abcdefasf'	
 	).save()
 

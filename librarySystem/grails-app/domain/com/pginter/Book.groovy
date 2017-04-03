@@ -2,7 +2,7 @@ package com.pginter
 
 class Book {
 
-	String title
+	String bookTitle
 	String subject
 	String author
 	String isbn
@@ -15,13 +15,13 @@ class Book {
 	static hasMany=[reviewID:BookReview] 
 
     static constraints = {
-	title nullable: false, blank: false
+	bookTitle nullable: false, blank: false
 	subject nullable: false, blank: false
 	author nullable: false, blank: false
 	isbn nullable: false, blank: false
 	dateBorrowed nullable: false, blank: false
 	returnDate nullable: false, blank: false
-	student nullable: false, blank: false
+	studentName nullable: false, blank: false
 	isOverdue nullable: false, blank: false
 	libraryName nullable: false, blank: false
     }
