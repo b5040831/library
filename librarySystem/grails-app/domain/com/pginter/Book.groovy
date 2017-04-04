@@ -12,6 +12,9 @@ class Book {
 	Boolean isOverdue
 	Library libraryName
 
+	String toString(){
+		return isbn
+	}
 	static hasMany=[reviewID:BookReview] 
 
     static constraints = {

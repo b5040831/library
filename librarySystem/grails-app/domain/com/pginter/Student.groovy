@@ -8,6 +8,10 @@ class Student {
 	String password
 	Course course
 
+	String toString(){
+		return studentName
+	}
+
 	static hasMany=[reviewID:BookReview, isbn:Book]
 
     static constraints = {

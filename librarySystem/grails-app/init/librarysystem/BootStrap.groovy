@@ -3,7 +3,7 @@ package com.pginter
 class BootStrap {
 
     def init = { servletContext ->
-	def course1 = new Course (
+	/*def course1 = new Course (
 		title: 'Course 1 title',
 		code: 'Course 1 code',
 		leader: 'course 1 leader',
@@ -109,7 +109,7 @@ class BootStrap {
 		dateReviewMade: new Date('20/03/2017'),
 		studentName: student1,
 		review: 'abcdefasf'	
-	).save()
+	).save()*/
 
     }
     def destroy = {

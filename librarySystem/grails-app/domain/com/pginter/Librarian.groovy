@@ -10,6 +10,10 @@ class Librarian {
 	String telephone
 	Library libraryName
 
+	String toString(){
+		return librarianName
+	}
+
 
 
     static constraints = {

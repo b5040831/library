@@ -8,6 +8,10 @@ class Library {
 	String location
 	int studySpaces
 
+	String toString(){
+		return libraryName
+	}
+
 	static hasMany=[librarianName:Librarian, studentName:Student, isbn:Book]
 
     static constraints = {
