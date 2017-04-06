@@ -1,8 +1,9 @@
 <!doctype html>
+
 <html>
 	<head>
-		<meta name="laout" content="main"/>
-		<title>Welcome</title>
+		<meta name="layout" content="main"/>
+		<title>Student Login</title>
 	</head>
 	<body>
 		 <g:if test="${flash.message}">
@@ -32,5 +33,6 @@
 		 </td></tr>
 		 </table>
 		 </g:form>
+
 	</body>
 </html>

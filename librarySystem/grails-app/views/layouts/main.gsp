@@ -38,6 +38,7 @@
     </div>
 
 	<g:loginToggle />
+	<g:studentLoginToggle />
 
     <g:layoutBody/>
 
