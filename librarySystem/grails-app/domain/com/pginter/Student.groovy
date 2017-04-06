@@ -4,7 +4,7 @@ class Student {
 
 	String studentName
 	String email
-	String username
+	String userName
 	String password
 	Course course
 
@@ -17,7 +17,7 @@ class Student {
     static constraints = {
 	studentName nullable: false, blank: false
 	email nullable: false, blank: false, email: true
-	username nullable: false, blank: false, unique: true
+	userName nullable: false, blank: false, unique: true
 	password nullable: false, blank: false, password: true
 	course nullable: false, blank: false
 
