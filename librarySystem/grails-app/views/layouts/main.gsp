@@ -13,32 +13,18 @@
     <g:layoutHead/>
 </head>
 <body>
-
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/#">
-                    <i class="fa grails-icon">
-                        <asset:image src="grails-cupsonly-logo-white.svg"/>
-                    </i> Grails
-                </a>
-            </div>
-            <div class="navbar-collapse collapse" aria-expanded="false" style="height: 0.8px;">
-                <ul class="nav navbar-nav navbar-right">
-                    <g:pageProperty name="page.nav" />
-                </ul>
-            </div>
-        </div>
-    </div>
-
-	<g:loginToggle />
-	<g:studentLoginToggle />
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+			<a class="navbar-brand" href="#">LibrarySystem</a>
+			</div>
+			<ul class="nav navbar-nav">
+			<li class="btn btn-info"><g:loginToggle /></li>
+			<li class="btn btn-info"><g:studentLoginToggle /></li>
+			</ul>
+	
+		</div>
+	</nav>
 
     <g:layoutBody/>
 
